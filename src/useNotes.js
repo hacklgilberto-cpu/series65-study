@@ -88,7 +88,9 @@ export function useNotes() {
       } else {
         setUser(null);
         setNotes(loadLocal());
-        setMode("local");
+        // Keep mode as "firebase" so the sign-in button stays visible;
+        // saves will fall back to localStorage only (user is null)
+        setMode("firebase");
       }
       setLoading(false);
     });
