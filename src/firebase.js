@@ -37,4 +37,7 @@ if (isFirebaseConfigured) {
   app = initializeApp(firebaseConfig);
   auth = getAuth(app);
   db = getFirestore(app);
-  g
+  googleProvider = new GoogleAuthProvider();
+}
+
+export { auth, db, googleProvider };
