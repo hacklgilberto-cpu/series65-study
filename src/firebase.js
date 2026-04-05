@@ -17,17 +17,17 @@ import { getFirestore } from "firebase/firestore";
 
 // ⚠️  REPLACE THIS with your own Firebase config from the Firebase Console
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY_HERE",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyAYdYbaM78gmqsraHbj6ghUAbdpiQpMV0Q",
+  authDomain: "series65-study.firebaseapp.com",
+  projectId: "series65-study",
+  storageBucket: "series65-study.firebasestorage.app",
+  messagingSenderId: "428602029408",
+  appId: "1:428602029408:web:8d7f520877eb4463d7da05"
 };
 
 // Check if Firebase is configured
 export const isFirebaseConfigured =
-  firebaseConfig.apiKey !== "YOUR_API_KEY_HERE";
+  firebaseConfig.apiKey !== "AIzaSyAYdYbaM78gmqsraHbj6ghUAbdpiQpMV0Q";
 
 let app = null;
 let auth = null;
