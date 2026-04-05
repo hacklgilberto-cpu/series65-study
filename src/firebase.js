@@ -26,8 +26,7 @@ const firebaseConfig = {
 };
 
 // Check if Firebase is configured
-export const isFirebaseConfigured =
-  firebaseConfig.apiKey !== "AIzaSyAYdYbaM78gmqsraHbj6ghUAbdpiQpMV0Q";
+export const isFirebaseConfigured = true;
 
 let app = null;
 let auth = null;
@@ -38,7 +37,4 @@ if (isFirebaseConfigured) {
   app = initializeApp(firebaseConfig);
   auth = getAuth(app);
   db = getFirestore(app);
-  googleProvider = new GoogleAuthProvider();
-}
-
-export { app, auth, db, googleProvider };
+  g
